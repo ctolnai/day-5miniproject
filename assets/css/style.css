@@ -1,9 +1,12 @@
 * {
-    background-color: rgb(78, 77, 77);
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: ivory;
 }
 
+body {
+    background-color: rgb(78, 77, 77);
+}
 h1, h2, h3 {
     color: indigo;
 }
@@ -49,3 +52,21 @@ div section h2 {
     border-style: dashed;
     text-align: center;
 }
+
+pre {
+    /* set styles to make it so code wraps in <pre> instead of overflowing */
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    color: var(--gin);
+    border-radius: 8px;
+    /* use linear-gradient() function to create a fading background  */
+    background-image: linear-gradient(
+      rgba(232, 102, 236, 0.3) 0%,
+      rgba(232, 102, 236, 0.6) 100%
+    );
+    display: flex;
+    align-items: center;
+
+  }
